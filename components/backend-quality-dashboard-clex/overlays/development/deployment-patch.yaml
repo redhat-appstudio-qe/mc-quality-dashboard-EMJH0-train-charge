@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-clex
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-mflx-tenant/mc-quality-dashboard/backend-quality-dashboard-clex@sha256:caef6c8f28933feea41c8296e06c47089dc7ba862b63ca36ded3641804dd48f6
+        name: container-image
+        resources: {}
+status: {}
